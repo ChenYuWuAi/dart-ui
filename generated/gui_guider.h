@@ -29,6 +29,7 @@ typedef struct
 	lv_obj_t *scrHome_imgIconWIFI;
 	lv_obj_t *scrHome_labelDate;
 	lv_obj_t *scrHome_labelMCUMode;
+	lv_obj_t *scrHome_img_1;
 	lv_obj_t *scrHome_contMain;
 	lv_obj_t *scrHome_contCopy;
 	lv_obj_t *scrHome_imgIconCopy;
@@ -98,6 +99,7 @@ typedef struct
 	lv_obj_t *scrLoader;
 	bool scrLoader_del;
 	lv_obj_t *scrLoader_contBG;
+	lv_obj_t *scrLoader_label_1;
 	lv_obj_t *scrLoader_arcLoader;
 	lv_obj_t *scrLoader_labelLoader;
 	lv_obj_t *scrLoader_labelPrompt;
@@ -139,7 +141,6 @@ typedef struct
 	lv_obj_t *scrQRCode_qrcodeExport;
 	lv_obj_t *scrQRCode_labelHintExport;
 	lv_obj_t *scrQRCode_imgIKUYO;
-	lv_obj_t *g_kb_top_layer;
 }lv_ui;
 
 typedef void (*ui_setup_scr_t)(lv_ui * ui);
@@ -177,6 +178,7 @@ void setup_scr_scrParams(lv_ui *ui);
 void setup_scr_scrQRCode(lv_ui *ui);
 LV_IMAGE_DECLARE(_single_r_RGB565A8_42x34);
 LV_IMAGE_DECLARE(_wifi_off_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_40x40);
+LV_IMAGE_DECLARE(_wifi_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_40x40);
 
 LV_IMAGE_DECLARE(_btn_bg_1_RGB565A8_166x211);
 LV_IMAGE_DECLARE(_rocket_launch_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_64x64);
@@ -219,7 +221,6 @@ LV_FONT_DECLARE(lv_font_fusionpixellatin_20)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_20)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_33)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_16)
-LV_FONT_DECLARE(lv_font_montserratMedium_18)
 
 
 #ifdef __cplusplus

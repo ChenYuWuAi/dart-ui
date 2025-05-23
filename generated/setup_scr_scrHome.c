@@ -177,6 +177,20 @@ void setup_scr_scrHome(lv_ui *ui)
     lv_obj_set_style_pad_left(ui->scrHome_labelMCUMode, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrHome_labelMCUMode, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
+    //Write codes scrHome_img_1
+    ui->scrHome_img_1 = lv_image_create(ui->scrHome_contTop);
+    lv_obj_set_pos(ui->scrHome_img_1, 59, 19);
+    lv_obj_set_size(ui->scrHome_img_1, 40, 40);
+    lv_obj_add_flag(ui->scrHome_img_1, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_add_flag(ui->scrHome_img_1, LV_OBJ_FLAG_CLICKABLE);
+    lv_image_set_src(ui->scrHome_img_1, &_wifi_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_40x40);
+    lv_image_set_pivot(ui->scrHome_img_1, 50,50);
+    lv_image_set_rotation(ui->scrHome_img_1, 0);
+
+    //Write style for scrHome_img_1, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
+    lv_obj_set_style_image_recolor_opa(ui->scrHome_img_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_image_opa(ui->scrHome_img_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+
     //Write codes scrHome_contMain
     ui->scrHome_contMain = lv_obj_create(ui->scrHome);
     lv_obj_set_pos(ui->scrHome_contMain, 33, 75);

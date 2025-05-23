@@ -62,11 +62,11 @@ void setup_scr_scrParams(lv_ui *ui)
     lv_obj_set_style_pad_all(ui->scrParams_imgbtnEdit, 0, LV_STATE_DEFAULT);
 
     //Write style for scrParams_imgbtnEdit, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
-    lv_obj_set_style_shadow_width(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrParams_imgbtnEdit, lv_color_hex(0x000000), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui->scrParams_imgbtnEdit, &lv_font_fusionpixelzhhans_12, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParams_imgbtnEdit, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrParams_imgbtnEdit, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_width(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
     //Write style for scrParams_imgbtnEdit, Part: LV_PART_MAIN, State: LV_STATE_PRESSED.
     lv_obj_set_style_image_recolor_opa(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_STATE_PRESSED);
@@ -104,11 +104,11 @@ void setup_scr_scrParams(lv_ui *ui)
     lv_obj_set_style_pad_all(ui->scrParams_imgbtnExport, 0, LV_STATE_DEFAULT);
 
     //Write style for scrParams_imgbtnExport, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
-    lv_obj_set_style_shadow_width(ui->scrParams_imgbtnExport, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrParams_imgbtnExport, lv_color_hex(0x000000), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui->scrParams_imgbtnExport, &lv_font_fusionpixelzhhans_12, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParams_imgbtnExport, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrParams_imgbtnExport, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_width(ui->scrParams_imgbtnExport, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
     //Write style for scrParams_imgbtnExport, Part: LV_PART_MAIN, State: LV_STATE_PRESSED.
     lv_obj_set_style_image_recolor_opa(ui->scrParams_imgbtnExport, 0, LV_PART_MAIN|LV_STATE_PRESSED);
@@ -138,20 +138,20 @@ void setup_scr_scrParams(lv_ui *ui)
     lv_label_set_long_mode(ui->scrParams_labelTitle, LV_LABEL_LONG_WRAP);
 
     //Write style for scrParams_labelTitle, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
-    lv_obj_set_style_shadow_width(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_border_width(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_radius(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrParams_labelTitle, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui->scrParams_labelTitle, &lv_font_fusionpixelzhhans_33, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParams_labelTitle, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_letter_space(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_line_space(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrParams_labelTitle, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_border_width(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_radius(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_pad_top(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_pad_bottom(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_pad_left(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_width(ui->scrParams_labelTitle, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
     //Write codes scrParams_btnBack
     ui->scrParams_btnBack = lv_button_create(ui->scrParams);
@@ -165,9 +165,9 @@ void setup_scr_scrParams(lv_ui *ui)
     lv_obj_set_width(ui->scrParams_btnBack_label, LV_PCT(100));
 
     //Write style for scrParams_btnBack, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
+    lv_obj_set_style_bg_opa(ui->scrParams_btnBack, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui->scrParams_btnBack, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_radius(ui->scrParams_btnBack, 8, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui->scrParams_btnBack, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrParams_btnBack, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrParams_btnBack, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui->scrParams_btnBack, &lv_font_montserratMedium_41, LV_PART_MAIN|LV_STATE_DEFAULT);
@@ -183,20 +183,20 @@ void setup_scr_scrParams(lv_ui *ui)
     lv_tabview_set_tab_bar_size(ui->scrParams_tabviewParamsSelect, 50);
 
     //Write style for scrParams_tabviewParamsSelect, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
-    lv_obj_set_style_border_width(ui->scrParams_tabviewParamsSelect, 1, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_border_opa(ui->scrParams_tabviewParamsSelect, 100, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_border_color(ui->scrParams_tabviewParamsSelect, lv_color_hex(0x2f3243), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_border_side(ui->scrParams_tabviewParamsSelect, LV_BORDER_SIDE_FULL, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_radius(ui->scrParams_tabviewParamsSelect, 10, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui->scrParams_tabviewParamsSelect, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui->scrParams_tabviewParamsSelect, lv_color_hex(0xeaeff3), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_grad_dir(ui->scrParams_tabviewParamsSelect, LV_GRAD_DIR_NONE, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_width(ui->scrParams_tabviewParamsSelect, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrParams_tabviewParamsSelect, lv_color_hex(0x4d4d4d), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui->scrParams_tabviewParamsSelect, &lv_font_fusionpixelzhhans_20, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParams_tabviewParamsSelect, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_letter_space(ui->scrParams_tabviewParamsSelect, 2, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_line_space(ui->scrParams_tabviewParamsSelect, 16, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_border_width(ui->scrParams_tabviewParamsSelect, 1, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_border_opa(ui->scrParams_tabviewParamsSelect, 100, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_border_color(ui->scrParams_tabviewParamsSelect, lv_color_hex(0x2f3243), LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_border_side(ui->scrParams_tabviewParamsSelect, LV_BORDER_SIDE_FULL, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_radius(ui->scrParams_tabviewParamsSelect, 10, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_width(ui->scrParams_tabviewParamsSelect, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
     //Write style state: LV_STATE_DEFAULT for &style_scrParams_tabviewParamsSelect_extra_btnm_main_default
     static lv_style_t style_scrParams_tabviewParamsSelect_extra_btnm_main_default;
@@ -398,16 +398,16 @@ void setup_scr_scrParams(lv_ui *ui)
     lv_obj_set_scrollbar_mode(ui->scrParams_contPanel, LV_SCROLLBAR_MODE_OFF);
 
     //Write style for scrParams_contPanel, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
+    lv_obj_set_style_border_width(ui->scrParams_contPanel, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_radius(ui->scrParams_contPanel, 14, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui->scrParams_contPanel, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui->scrParams_contPanel, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_grad_dir(ui->scrParams_contPanel, LV_GRAD_DIR_NONE, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_border_width(ui->scrParams_contPanel, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_radius(ui->scrParams_contPanel, 14, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_width(ui->scrParams_contPanel, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_pad_top(ui->scrParams_contPanel, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_pad_bottom(ui->scrParams_contPanel, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_pad_left(ui->scrParams_contPanel, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(ui->scrParams_contPanel, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_width(ui->scrParams_contPanel, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
     //Write codes scrParams_tableDartParams
     ui->scrParams_tableDartParams = lv_table_create(ui->scrParams_contPanel);

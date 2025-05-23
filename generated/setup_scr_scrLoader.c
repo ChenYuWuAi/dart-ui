@@ -46,6 +46,45 @@ void setup_scr_scrLoader(lv_ui *ui)
     lv_obj_set_style_pad_right(ui->scrLoader_contBG, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrLoader_contBG, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
+    //Write codes scrLoader_label_1
+    ui->scrLoader_label_1 = lv_label_create(ui->scrLoader_contBG);
+    lv_obj_set_pos(ui->scrLoader_label_1, 200, 348);
+    lv_obj_set_size(ui->scrLoader_label_1, 413, 44);
+    lv_label_set_text(ui->scrLoader_label_1, "配置/激活节点...");
+    lv_label_set_long_mode(ui->scrLoader_label_1, LV_LABEL_LONG_WRAP);
+
+    //Write style for scrLoader_label_1, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
+    lv_obj_set_style_border_width(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_radius(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_color(ui->scrLoader_label_1, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->scrLoader_label_1, &lv_font_fusionpixelzhhans_26, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui->scrLoader_label_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_letter_space(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_line_space(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(ui->scrLoader_label_1, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_right(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_bottom(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_width(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+
+    //Write style for scrLoader_label_1, Part: LV_PART_MAIN, State: LV_STATE_DISABLED.
+    lv_obj_set_style_border_width(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_radius(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_text_color(ui->scrLoader_label_1, lv_color_hex(0x000000), LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_text_font(ui->scrLoader_label_1, &lv_font_fusionpixelzhhans_26, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_text_opa(ui->scrLoader_label_1, 255, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_text_letter_space(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_text_line_space(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_text_align(ui->scrLoader_label_1, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_bg_opa(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_pad_top(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_pad_right(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_pad_bottom(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_pad_left(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+    lv_obj_set_style_shadow_width(ui->scrLoader_label_1, 0, LV_PART_MAIN|LV_STATE_DISABLED);
+
     //Write codes scrLoader_arcLoader
     ui->scrLoader_arcLoader = lv_arc_create(ui->scrLoader);
     lv_obj_set_pos(ui->scrLoader_arcLoader, 300, 50);
@@ -117,9 +156,9 @@ void setup_scr_scrLoader(lv_ui *ui)
 
     //Write codes scrLoader_labelPrompt
     ui->scrLoader_labelPrompt = lv_label_create(ui->scrLoader);
-    lv_obj_set_pos(ui->scrLoader_labelPrompt, 196, 320);
+    lv_obj_set_pos(ui->scrLoader_labelPrompt, 192, 287);
     lv_obj_set_size(ui->scrLoader_labelPrompt, 413, 44);
-    lv_label_set_text(ui->scrLoader_labelPrompt, "操作中，请等待");
+    lv_label_set_text(ui->scrLoader_labelPrompt, "正在启动，请等待");
     lv_label_set_long_mode(ui->scrLoader_labelPrompt, LV_LABEL_LONG_WRAP);
 
     //Write style for scrLoader_labelPrompt, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
