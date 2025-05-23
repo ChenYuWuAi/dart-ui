@@ -1583,7 +1583,7 @@
 							"width": 528,
 							"height": 33,
 							"default_style": false,
-							"text": "无异常YawTriggerLoad01电机MCU相机离线",
+							"text": "无异常YawTriggerLoad01电机裁判系统遥控MCU相机离线",
 							"long_mode": "LV_LABEL_LONG_SCROLL",
 							"custom_attribute": [],
 							"attribute_type": "",
@@ -10985,7 +10985,7 @@
 								"event": {
 									"widget": {}
 								},
-								"text": "无异常YawTriggerLoad01电机MCU相机离线",
+								"text": "无异常YawTriggerLoad01电机裁判系统遥控MCU相机离线",
 								"long_mode": "LV_LABEL_LONG_SCROLL",
 								"style": [
 									{

@@ -68,7 +68,7 @@ void setup_scr_scrHome(lv_ui *ui)
     ui->scrHome_labelPrompt = lv_label_create(ui->scrHome_contText);
     lv_obj_set_pos(ui->scrHome_labelPrompt, 19, 30);
     lv_obj_set_size(ui->scrHome_labelPrompt, 528, 33);
-    lv_label_set_text(ui->scrHome_labelPrompt, "无异常YawTriggerLoad01电机MCU相机离线");
+    lv_label_set_text(ui->scrHome_labelPrompt, "无异常YawTriggerLoad01电机裁判系统遥控MCU相机离线");
     lv_label_set_long_mode(ui->scrHome_labelPrompt, LV_LABEL_LONG_SCROLL);
 
     //Write style for scrHome_labelPrompt, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
