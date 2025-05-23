@@ -99,7 +99,7 @@ typedef struct
 	lv_obj_t *scrLoader;
 	bool scrLoader_del;
 	lv_obj_t *scrLoader_contBG;
-	lv_obj_t *scrLoader_label_1;
+	lv_obj_t *scrLoader_labelLoadStage;
 	lv_obj_t *scrLoader_arcLoader;
 	lv_obj_t *scrLoader_labelLoader;
 	lv_obj_t *scrLoader_labelPrompt;
@@ -141,6 +141,7 @@ typedef struct
 	lv_obj_t *scrQRCode_qrcodeExport;
 	lv_obj_t *scrQRCode_labelHintExport;
 	lv_obj_t *scrQRCode_imgIKUYO;
+	lv_obj_t *g_kb_top_layer;
 }lv_ui;
 
 typedef void (*ui_setup_scr_t)(lv_ui * ui);
@@ -208,19 +209,18 @@ LV_IMAGE_DECLARE(_upload_24dp_904E29_FILL0_wght400_GRAD0_opsz24_RGB565A8_40x40);
 LV_IMAGE_DECLARE(_Camera_XHS_17465037706701040g2sg31fcdj4a2medg5oo7_RGB565A8_239x235);
 
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_26)
-LV_FONT_DECLARE(lv_font_montserratMedium_26)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_26)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_33)
-LV_FONT_DECLARE(lv_font_montserratMedium_41)
-LV_FONT_DECLARE(lv_font_montserratMedium_20)
+LV_FONT_DECLARE(lv_font_fusionpixelzhhans_41)
+LV_FONT_DECLARE(lv_font_fusionpixelzhhans_20)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_12)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_23)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_23)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_18)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_20)
-LV_FONT_DECLARE(lv_font_fusionpixelzhhans_20)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_33)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_16)
+LV_FONT_DECLARE(lv_font_montserratMedium_18)
 
 
 #ifdef __cplusplus

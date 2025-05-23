@@ -66,7 +66,7 @@ void setup_scr_scrSetup(lv_ui *ui)
     lv_obj_set_style_radius(ui->scrSetup_btnBack, 35, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrSetup_btnBack, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrSetup_btnBack, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui->scrSetup_btnBack, &lv_font_montserratMedium_26, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->scrSetup_btnBack, &lv_font_fusionpixelzhhans_26, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrSetup_btnBack, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrSetup_btnBack, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
 
@@ -81,7 +81,7 @@ void setup_scr_scrSetup(lv_ui *ui)
     lv_obj_set_style_border_width(ui->scrSetup_labelPrompt, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_radius(ui->scrSetup_labelPrompt, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrSetup_labelPrompt, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui->scrSetup_labelPrompt, &lv_font_montserratMedium_26, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->scrSetup_labelPrompt, &lv_font_fusionpixelzhhans_26, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrSetup_labelPrompt, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_letter_space(ui->scrSetup_labelPrompt, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_line_space(ui->scrSetup_labelPrompt, 0, LV_PART_MAIN|LV_STATE_DEFAULT);

@@ -86,7 +86,7 @@ void setup_scr_scrParamsEdit(lv_ui *ui)
     lv_obj_set_style_radius(ui->scrParamsEdit_btnBack, 8, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrParamsEdit_btnBack, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrParamsEdit_btnBack, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui->scrParamsEdit_btnBack, &lv_font_montserratMedium_41, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->scrParamsEdit_btnBack, &lv_font_fusionpixelzhhans_41, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParamsEdit_btnBack, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrParamsEdit_btnBack, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
 
@@ -150,7 +150,7 @@ void setup_scr_scrParamsEdit(lv_ui *ui)
     lv_obj_set_style_radius(ui->scrParamsEdit_btnMinus, 8, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrParamsEdit_btnMinus, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrParamsEdit_btnMinus, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui->scrParamsEdit_btnMinus, &lv_font_montserratMedium_41, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->scrParamsEdit_btnMinus, &lv_font_fusionpixelzhhans_41, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParamsEdit_btnMinus, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrParamsEdit_btnMinus, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
 
@@ -173,7 +173,7 @@ void setup_scr_scrParamsEdit(lv_ui *ui)
     lv_obj_set_style_radius(ui->scrParamsEdit_btnPlus, 8, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrParamsEdit_btnPlus, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->scrParamsEdit_btnPlus, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui->scrParamsEdit_btnPlus, &lv_font_montserratMedium_41, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->scrParamsEdit_btnPlus, &lv_font_fusionpixelzhhans_41, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParamsEdit_btnPlus, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrParamsEdit_btnPlus, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
 

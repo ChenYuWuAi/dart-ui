@@ -499,6 +499,7 @@ static void scrLoader_event_handler (lv_event_t *e)
         ui_animation(guider_ui.scrLoader_labelLoader, 300, 0, lv_obj_get_y(guider_ui.scrLoader_labelLoader), 155, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrLoader_arcLoader, 300, 0, lv_obj_get_y(guider_ui.scrLoader_arcLoader), 70, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
 
+        ui_animation(guider_ui.scrLoader_labelLoadStage, 400, 0, lv_obj_get_y(guider_ui.scrLoader_labelLoadStage), 384, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         break;
     }
     case LV_EVENT_SCREEN_UNLOAD_START:
@@ -506,6 +507,7 @@ static void scrLoader_event_handler (lv_event_t *e)
         ui_animation(guider_ui.scrLoader_labelPrompt, 300, 0, lv_obj_get_y(guider_ui.scrLoader_labelPrompt), 360, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrLoader_labelLoader, 400, 0, lv_obj_get_y(guider_ui.scrLoader_labelLoader), 175, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrLoader_arcLoader, 300, 0, lv_obj_get_y(guider_ui.scrLoader_arcLoader), 88, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrLoader_labelLoadStage, 300, 0, lv_obj_get_y(guider_ui.scrLoader_labelLoadStage), 404, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         break;
     }
     default:
