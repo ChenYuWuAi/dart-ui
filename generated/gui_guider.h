@@ -26,10 +26,10 @@ typedef struct
 	lv_obj_t *scrHome_labelPrompt;
 	lv_obj_t *scrHome_contTop;
 	lv_obj_t *scrHome_imgRoboMaster;
-	lv_obj_t *scrHome_imgIconWIFI;
+	lv_obj_t *scrHome_imgIconNoWIFI;
 	lv_obj_t *scrHome_labelDate;
 	lv_obj_t *scrHome_labelMCUMode;
-	lv_obj_t *scrHome_img_1;
+	lv_obj_t *scrHome_imgIconWIFI;
 	lv_obj_t *scrHome_contMain;
 	lv_obj_t *scrHome_contCopy;
 	lv_obj_t *scrHome_imgIconCopy;
