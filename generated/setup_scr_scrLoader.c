@@ -50,7 +50,7 @@ void setup_scr_scrLoader(lv_ui *ui)
     ui->scrLoader_labelLoadStage = lv_label_create(ui->scrLoader);
     lv_obj_set_pos(ui->scrLoader_labelLoadStage, 193, 331);
     lv_obj_set_size(ui->scrLoader_labelLoadStage, 413, 44);
-    lv_label_set_text(ui->scrLoader_labelLoadStage, "配置/激活节点...");
+    lv_label_set_text(ui->scrLoader_labelLoadStage, "配置/激活/清理资源/停用节点...");
     lv_label_set_long_mode(ui->scrLoader_labelLoadStage, LV_LABEL_LONG_WRAP);
 
     //Write style for scrLoader_labelLoadStage, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.

@@ -7132,7 +7132,7 @@
 					"width": 413,
 					"height": 44,
 					"default_style": false,
-					"text": "配置/激活节点...",
+					"text": "配置/激活/清理资源/停用节点...",
 					"long_mode": "LV_LABEL_LONG_WRAP",
 					"custom_attribute": [],
 					"attribute_type": "",
@@ -17658,7 +17658,7 @@
 						"default_style": false,
 						"attribute_type": "",
 						"custom_attribute": [],
-						"text": "配置/激活节点...",
+						"text": "配置/激活/清理资源/停用节点...",
 						"long_mode": "LV_LABEL_LONG_WRAP",
 						"style": [
 							{
