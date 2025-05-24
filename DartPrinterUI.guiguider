@@ -9636,7 +9636,7 @@
 								"bindCondi": "",
 								"actionList": {
 									"custom_code": {
-										"inc_c": "static int param_edit_is_param = 0;",
+										"inc_c": "int param_edit_is_param = 0;",
 										"code_c": "if(lv_tabview_get_tab_act(guider_ui.scrParams_tabviewParamsSelect) == 0)\r\n  param_edit_is_param = 0;\r\nelse\r\n  param_edit_is_param = 1;",
 										"inc_py": "",
 										"code_py": ""
@@ -18993,7 +18993,7 @@
 									"bindCondi": "",
 									"actionList": {
 										"custom_code": {
-											"inc_c": "static int param_edit_is_param = 0;",
+											"inc_c": "int param_edit_is_param = 0;",
 											"code_c": "if(lv_tabview_get_tab_act(guider_ui.scrParams_tabviewParamsSelect) == 0)\r\n  param_edit_is_param = 0;\r\nelse\r\n  param_edit_is_param = 1;",
 											"inc_py": "",
 											"code_py": ""

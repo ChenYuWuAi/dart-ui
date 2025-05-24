@@ -15,6 +15,8 @@ extern "C" {
 
 #include "gui_guider.h"
 
+extern int param_edit_is_param = 0;
+
 void custom_init(lv_ui *ui);
 
 void slider_adjust_img_cb(lv_obj_t * img, int32_t brightValue, int16_t hueValue);

@@ -110,7 +110,7 @@ void change_digit_at_cursor(lv_obj_t * ta, int delta) {
     }
 }
 
-static int param_edit_is_param = 0;
+int param_edit_is_param = 0;
 
 static void scrHome_event_handler (lv_event_t *e)
 {
