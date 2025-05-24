@@ -293,13 +293,9 @@ void setup_scr_scrParams(lv_ui *ui)
     lv_obj_set_pos(ui->scrParams_tableDartStatus, 20, 54);
     lv_obj_set_scrollbar_mode(ui->scrParams_tableDartStatus, LV_SCROLLBAR_MODE_OFF);
     lv_table_set_column_count(ui->scrParams_tableDartStatus,2);
-    lv_table_set_row_count(ui->scrParams_tableDartStatus,3);
+    lv_table_set_row_count(ui->scrParams_tableDartStatus,1);
     lv_table_set_cell_value(ui->scrParams_tableDartStatus,0,0,"状态名");
-    lv_table_set_cell_value(ui->scrParams_tableDartStatus,1,0,"current_yaw_angle");
-    lv_table_set_cell_value(ui->scrParams_tableDartStatus,2,0,"target_yaw_offset");
     lv_table_set_cell_value(ui->scrParams_tableDartStatus,0,1,"参数值");
-    lv_table_set_cell_value(ui->scrParams_tableDartStatus,1,1,"114514");
-    lv_table_set_cell_value(ui->scrParams_tableDartStatus,2,1,"2000");
 
     //Write style for scrParams_tableDartStatus, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
     lv_obj_set_style_pad_top(ui->scrParams_tableDartStatus, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
@@ -348,7 +344,7 @@ void setup_scr_scrParams(lv_ui *ui)
 
     //Write style for scrParams_tableDartStatus, Part: LV_PART_ITEMS, State: LV_STATE_DEFAULT.
     lv_obj_set_style_text_color(ui->scrParams_tableDartStatus, lv_color_hex(0x393c41), LV_PART_ITEMS|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui->scrParams_tableDartStatus, &lv_font_fusionpixelzhhans_16, LV_PART_ITEMS|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->scrParams_tableDartStatus, &lv_font_fusionpixelzhhans_24, LV_PART_ITEMS|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParams_tableDartStatus, 255, LV_PART_ITEMS|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrParams_tableDartStatus, LV_TEXT_ALIGN_CENTER, LV_PART_ITEMS|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui->scrParams_tableDartStatus, 0, LV_PART_ITEMS|LV_STATE_DEFAULT);
@@ -363,7 +359,7 @@ void setup_scr_scrParams(lv_ui *ui)
 
     //Write style for scrParams_tableDartStatus, Part: LV_PART_ITEMS, State: LV_STATE_FOCUSED.
     lv_obj_set_style_text_color(ui->scrParams_tableDartStatus, lv_color_hex(0x393c41), LV_PART_ITEMS|LV_STATE_FOCUSED);
-    lv_obj_set_style_text_font(ui->scrParams_tableDartStatus, &lv_font_fusionpixelzhhans_16, LV_PART_ITEMS|LV_STATE_FOCUSED);
+    lv_obj_set_style_text_font(ui->scrParams_tableDartStatus, &lv_font_fusionpixelzhhans_24, LV_PART_ITEMS|LV_STATE_FOCUSED);
     lv_obj_set_style_text_opa(ui->scrParams_tableDartStatus, 255, LV_PART_ITEMS|LV_STATE_FOCUSED);
     lv_obj_set_style_text_align(ui->scrParams_tableDartStatus, LV_TEXT_ALIGN_CENTER, LV_PART_ITEMS|LV_STATE_FOCUSED);
     lv_obj_set_style_bg_opa(ui->scrParams_tableDartStatus, 0, LV_PART_ITEMS|LV_STATE_FOCUSED);
@@ -469,7 +465,7 @@ void setup_scr_scrParams(lv_ui *ui)
 
     //Write style for scrParams_tableDartParams, Part: LV_PART_ITEMS, State: LV_STATE_DEFAULT.
     lv_obj_set_style_text_color(ui->scrParams_tableDartParams, lv_color_hex(0x393c41), LV_PART_ITEMS|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui->scrParams_tableDartParams, &lv_font_fusionpixelzhhans_16, LV_PART_ITEMS|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->scrParams_tableDartParams, &lv_font_fusionpixelzhhans_24, LV_PART_ITEMS|LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui->scrParams_tableDartParams, 255, LV_PART_ITEMS|LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui->scrParams_tableDartParams, LV_TEXT_ALIGN_CENTER, LV_PART_ITEMS|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui->scrParams_tableDartParams, 0, LV_PART_ITEMS|LV_STATE_DEFAULT);
@@ -484,7 +480,7 @@ void setup_scr_scrParams(lv_ui *ui)
 
     //Write style for scrParams_tableDartParams, Part: LV_PART_ITEMS, State: LV_STATE_FOCUSED.
     lv_obj_set_style_text_color(ui->scrParams_tableDartParams, lv_color_hex(0x393c41), LV_PART_ITEMS|LV_STATE_FOCUSED);
-    lv_obj_set_style_text_font(ui->scrParams_tableDartParams, &lv_font_fusionpixelzhhans_16, LV_PART_ITEMS|LV_STATE_FOCUSED);
+    lv_obj_set_style_text_font(ui->scrParams_tableDartParams, &lv_font_fusionpixelzhhans_24, LV_PART_ITEMS|LV_STATE_FOCUSED);
     lv_obj_set_style_text_opa(ui->scrParams_tableDartParams, 255, LV_PART_ITEMS|LV_STATE_FOCUSED);
     lv_obj_set_style_text_align(ui->scrParams_tableDartParams, LV_TEXT_ALIGN_CENTER, LV_PART_ITEMS|LV_STATE_FOCUSED);
     lv_obj_set_style_bg_opa(ui->scrParams_tableDartParams, 0, LV_PART_ITEMS|LV_STATE_FOCUSED);

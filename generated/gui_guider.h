@@ -219,6 +219,7 @@ LV_FONT_DECLARE(lv_font_fusionpixellatin_18)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_20)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_33)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_16)
+LV_FONT_DECLARE(lv_font_fusionpixelzhhans_24)
 LV_FONT_DECLARE(lv_font_montserratMedium_18)
 
 
