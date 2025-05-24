@@ -15,7 +15,7 @@ extern "C" {
 
 #include "gui_guider.h"
 
-extern int param_edit_is_param = 0;
+extern int param_edit_is_param;
 
 void custom_init(lv_ui *ui);
 

@@ -239,8 +239,7 @@
 					],
 					"event": {
 						"widget": {}
-					},
-					"layerName": "scrHome"
+					}
 				},
 				{
 					"name": "contMain",
@@ -1216,8 +1215,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrHome"
+					]
 				},
 				{
 					"name": "contTop",
@@ -1554,8 +1552,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrHome"
+					]
 				},
 				{
 					"name": "contText",
@@ -1703,8 +1700,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrHome"
+					]
 				},
 				{
 					"name": "contBG",
@@ -1751,8 +1747,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrHome"
+					]
 				}
 			],
 			"event": {
@@ -1981,8 +1976,7 @@
 					"bg_img_recolor": "#ffffff",
 					"bg_img_recolor_opa": 0
 				}
-			],
-			"layerName": "scrHome"
+			]
 		},
 		{
 			"name": "scrVision",
@@ -2245,8 +2239,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrVision"
+					]
 				},
 				{
 					"name": "btnNext",
@@ -2480,8 +2473,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrVision"
+					}
 				},
 				{
 					"name": "contPanel",
@@ -2951,8 +2943,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrVision"
+					]
 				},
 				{
 					"name": "btnBack",
@@ -3166,8 +3157,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrVision"
+					}
 				},
 				{
 					"name": "labelTitle",
@@ -3264,8 +3254,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrVision"
+					]
 				},
 				{
 					"name": "contBG",
@@ -3312,8 +3301,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrVision"
+					]
 				}
 			],
 			"event": {
@@ -3555,8 +3543,7 @@
 					"bg_img_recolor": "#ffffff",
 					"bg_img_recolor_opa": 0
 				}
-			],
-			"layerName": "scrVision"
+			]
 		},
 		{
 			"name": "scrParamsEdit",
@@ -3979,8 +3966,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrParamsEdit"
+					]
 				},
 				{
 					"name": "listFiles",
@@ -4219,8 +4205,7 @@
 							"transform_width": 0,
 							"bg_opa": 255
 						}
-					],
-					"layerName": "scrParamsEdit"
+					]
 				},
 				{
 					"name": "btnNext",
@@ -4422,8 +4407,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrParamsEdit"
+					}
 				},
 				{
 					"name": "contPanel",
@@ -5409,8 +5393,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrParamsEdit"
+					]
 				},
 				{
 					"name": "btnBack",
@@ -5612,8 +5595,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrParamsEdit"
+					}
 				},
 				{
 					"name": "labelTitle",
@@ -5710,8 +5692,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrParamsEdit"
+					]
 				},
 				{
 					"name": "contBG",
@@ -5758,8 +5739,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrParamsEdit"
+					]
 				}
 			],
 			"event": {
@@ -6054,8 +6034,7 @@
 					"bg_img_recolor": "#ffffff",
 					"bg_img_recolor_opa": 0
 				}
-			],
-			"layerName": "scrParamsEdit"
+			]
 		},
 		{
 			"name": "scrSetup",
@@ -6103,8 +6082,7 @@
 							"image_recolor_opa": 0,
 							"image_opa": 255
 						}
-					],
-					"layerName": "scrSetup"
+					]
 				},
 				{
 					"name": "imgWave",
@@ -6135,8 +6113,7 @@
 							"image_recolor_opa": 0,
 							"image_opa": 255
 						}
-					],
-					"layerName": "scrSetup"
+					]
 				},
 				{
 					"name": "imgPrinter",
@@ -6167,8 +6144,7 @@
 							"image_recolor_opa": 0,
 							"image_opa": 255
 						}
-					],
-					"layerName": "scrSetup"
+					]
 				},
 				{
 					"name": "labelPrompt",
@@ -6265,8 +6241,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrSetup"
+					]
 				},
 				{
 					"name": "btnBack",
@@ -6468,8 +6443,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrSetup"
+					}
 				},
 				{
 					"name": "contBG",
@@ -6518,8 +6492,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrSetup"
+					]
 				}
 			],
 			"event": {
@@ -6720,8 +6693,7 @@
 					"bg_img_recolor": "#ffffff",
 					"bg_img_recolor_opa": 0
 				}
-			],
-			"layerName": "scrSetup"
+			]
 		},
 		{
 			"name": "scrLoader",
@@ -6835,8 +6807,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrLoader"
+					]
 				},
 				{
 					"name": "labelLoader",
@@ -6933,8 +6904,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrLoader"
+					]
 				},
 				{
 					"name": "arcLoader",
@@ -7117,8 +7087,7 @@
 							"bg_main_stop": 0,
 							"bg_grad_stop": 255
 						}
-					],
-					"layerName": "scrLoader"
+					]
 				},
 				{
 					"name": "labelLoadStage",
@@ -7215,8 +7184,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrLoader"
+					]
 				},
 				{
 					"name": "contBG",
@@ -7542,8 +7510,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrFinished"
+					]
 				},
 				{
 					"name": "btnNxet",
@@ -7745,8 +7712,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrFinished"
+					}
 				},
 				{
 					"name": "imgIconOk",
@@ -7777,8 +7743,7 @@
 							"image_recolor_opa": 0,
 							"image_opa": 255
 						}
-					],
-					"layerName": "scrFinished"
+					]
 				},
 				{
 					"name": "contBG",
@@ -7827,8 +7792,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrFinished"
+					]
 				}
 			],
 			"event": {
@@ -7982,8 +7946,7 @@
 					"bg_img_recolor": "#ffffff",
 					"bg_img_recolor_opa": 0
 				}
-			],
-			"layerName": "scrFinished"
+			]
 		},
 		{
 			"name": "scrParams",
@@ -8332,8 +8295,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrParams"
+					]
 				},
 				{
 					"name": "contDartStatus",
@@ -8661,8 +8623,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrParams"
+					]
 				},
 				{
 					"name": "tabviewParamsSelect",
@@ -8797,8 +8758,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrParams"
+					}
 				},
 				{
 					"name": "btnBack",
@@ -9012,8 +8972,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrParams"
+					}
 				},
 				{
 					"name": "labelTitle",
@@ -9110,8 +9069,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrParams"
+					]
 				},
 				{
 					"name": "imgbtnExport",
@@ -9217,8 +9175,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrParams"
+					}
 				},
 				{
 					"name": "imgbtnEdit",
@@ -9324,8 +9281,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrParams"
+					}
 				},
 				{
 					"name": "contBG",
@@ -9372,8 +9328,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrParams"
+					]
 				}
 			],
 			"event": {
@@ -9701,8 +9656,7 @@
 					"bg_img_recolor": "#ffffff",
 					"bg_img_recolor_opa": 0
 				}
-			],
-			"layerName": "scrParams"
+			]
 		},
 		{
 			"name": "scrQRCode",
@@ -9750,8 +9704,7 @@
 							"image_recolor_opa": 0,
 							"image_opa": 255
 						}
-					],
-					"layerName": "scrQRCode"
+					]
 				},
 				{
 					"name": "labelHintExport",
@@ -9848,8 +9801,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrQRCode"
+					]
 				},
 				{
 					"name": "qrcodeExport",
@@ -9863,8 +9815,7 @@
 					"width": 365,
 					"qr_data": "{\n    \"auto_aim_enabled\": true,\n    \"auxiliary_force_offsets\": [\n        0,\n        -600000,\n        -400000,\n        -200000\n    ],\n    \"auxiliary_yaw_offsets\": [\n        0,\n        0,\n        2000,\n        1000\n    ],\n    \"dart_launch_process_offset_begin\": 0,\n    \"dart_launch_process_offset_end\": 3,\n    \"last_param_update_time\": 1747243193470,\n    \"primary_force\": 7900000,\n    \"primary_force_offset\": 0,\n    \"primary_yaw\": 116450,\n    \"target_auto_aim_x_axis\": 355.0\n}",
 					"dark_color": "#2C3224",
-					"light_color": "#ffffff",
-					"layerName": "scrQRCode"
+					"light_color": "#ffffff"
 				},
 				{
 					"name": "tabviewExportSelect",
@@ -9978,8 +9929,7 @@
 							"bg_grad_stop": 255,
 							"bg_opa": 60
 						}
-					],
-					"layerName": "scrQRCode"
+					]
 				},
 				{
 					"name": "btnBack",
@@ -10181,8 +10131,7 @@
 								]
 							}
 						}
-					},
-					"layerName": "scrQRCode"
+					}
 				},
 				{
 					"name": "labelTitle",
@@ -10279,8 +10228,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrQRCode"
+					]
 				},
 				{
 					"name": "contBG",
@@ -10327,8 +10275,7 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					],
-					"layerName": "scrQRCode"
+					]
 				}
 			],
 			"event": {
@@ -10594,8 +10541,7 @@
 					"bg_img_recolor": "#ffffff",
 					"bg_img_recolor_opa": 0
 				}
-			],
-			"layerName": "scrQRCode"
+			]
 		}
 	],
 	"Application": {
@@ -10612,7 +10558,7 @@
 			"display_kb": true,
 			"chinese_input": false,
 			"chinese_library": "mini",
-			"keyboard_font_type": "montserratMedium",
+			"keyboard_font_type": "fusionpixellatin",
 			"keyboard_font_size": 18
 		},
 		"default_scr": "scrLoader",
