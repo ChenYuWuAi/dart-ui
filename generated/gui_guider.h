@@ -58,7 +58,7 @@ typedef struct
 	lv_obj_t *scrVision_btnNext;
 	lv_obj_t *scrVision_btnNext_label;
 	lv_obj_t *scrVision_contImage;
-	lv_obj_t *scrVision_imgScanned;
+	lv_obj_t *scrVision_canvasVision;
 	lv_obj_t *scrVision_btnRestart;
 	lv_obj_t *scrVision_btnRestart_label;
 	lv_obj_t *scrParamsEdit;
@@ -141,7 +141,6 @@ typedef struct
 	lv_obj_t *scrQRCode_qrcodeExport;
 	lv_obj_t *scrQRCode_labelHintExport;
 	lv_obj_t *scrQRCode_imgIKUYO;
-	lv_obj_t *g_kb_top_layer;
 }lv_ui;
 
 typedef void (*ui_setup_scr_t)(lv_ui * ui);
@@ -195,7 +194,6 @@ LV_IMAGE_DECLARE(_settings_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_64x64
 LV_IMAGE_DECLARE(_8935DE8FFEC3E00FAE4951382D01C143_RGB565A8_100x100);
 LV_IMAGE_DECLARE(_bright_RGB565A8_33x33);
 LV_IMAGE_DECLARE(_hue_RGB565A8_30x30);
-LV_IMAGE_DECLARE(_example_RGB565A8_426x341);
 LV_IMAGE_DECLARE(_restart_alt_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24_RGB565A8_50x50);
 LV_IMAGE_DECLARE(_restart_alt_24dp_BB271A_FILL0_wght400_GRAD0_opsz24_RGB565A8_50x50);
 LV_IMAGE_DECLARE(_printer2_RGB565A8_116x120);
@@ -220,7 +218,6 @@ LV_FONT_DECLARE(lv_font_fusionpixellatin_18)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_20)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_33)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_16)
-LV_FONT_DECLARE(lv_font_montserratMedium_18)
 
 
 #ifdef __cplusplus

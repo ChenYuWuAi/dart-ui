@@ -225,18 +225,18 @@ void setup_scr_scrVision(lv_ui *ui)
     lv_obj_set_style_pad_right(ui->scrVision_contImage, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrVision_contImage, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
-    //Write codes scrVision_imgScanned
-    ui->scrVision_imgScanned = lv_image_create(ui->scrVision_contImage);
-    lv_obj_set_pos(ui->scrVision_imgScanned, 41, 16);
-    lv_obj_set_size(ui->scrVision_imgScanned, 426, 341);
-    lv_obj_add_flag(ui->scrVision_imgScanned, LV_OBJ_FLAG_CLICKABLE);
-    lv_image_set_src(ui->scrVision_imgScanned, &_example_RGB565A8_426x341);
-    lv_image_set_pivot(ui->scrVision_imgScanned, 50,50);
-    lv_image_set_rotation(ui->scrVision_imgScanned, 0);
+    //Write codes scrVision_canvasVision
+    LV_DRAW_BUF_DEFINE(draw_buf, 426, 341, LV_COLOR_FORMAT_NATIVE);
+    ui->scrVision_canvasVision = lv_canvas_create(ui->scrVision_contImage);
+    lv_obj_set_pos(ui->scrVision_canvasVision, 41, 16);
+    lv_obj_set_size(ui->scrVision_canvasVision, 426, 341);
+    lv_obj_set_scrollbar_mode(ui->scrVision_canvasVision, LV_SCROLLBAR_MODE_OFF);
+    lv_canvas_set_draw_buf(ui->scrVision_canvasVision, &draw_buf);
+    lv_canvas_fill_bg(ui->scrVision_canvasVision, lv_color_hex(0xffffff), 255);
 
-    //Write style for scrVision_imgScanned, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
-    lv_obj_set_style_image_recolor_opa(ui->scrVision_imgScanned, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_image_opa(ui->scrVision_imgScanned, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_layer_t layer_scrVision_canvasVision;
+    lv_canvas_init_layer(ui->scrVision_canvasVision, &layer_scrVision_canvasVision);
+    lv_canvas_finish_layer(ui->scrVision_canvasVision, &layer_scrVision_canvasVision);
 
     //Write codes scrVision_btnRestart
     ui->scrVision_btnRestart = lv_button_create(ui->scrVision);
