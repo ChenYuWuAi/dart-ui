@@ -10616,7 +10616,7 @@
 		},
 		"version": "test_v1",
 		"keyBoard": {
-			"display_kb": false,
+			"display_kb": true,
 			"chinese_input": false,
 			"chinese_library": "mini",
 			"keyboard_font_type": "montserratMedium",
