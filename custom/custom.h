@@ -25,6 +25,10 @@ void loader_anim_cb(lv_obj_t* var, uint32_t value);
 
 void loader_anim_complete_cb(lv_obj_t* var);
 
+// 元件寿命统计相关函数
+void scrStatistic_btnLifeSpanClear_event_handler(lv_event_t *e);
+void scrStatistic_ddlistLifeSpanSelect_event_handler(lv_event_t *e);
+
 #ifdef __cplusplus
 }
 #endif

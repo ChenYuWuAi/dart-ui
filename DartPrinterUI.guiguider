@@ -11386,8 +11386,8 @@
 			"version": 190,
 			"scrollbar_mode": "OFF",
 			"customer_code": {
-				"code_c": "",
-				"inc_c": "",
+				"code_c": "lv_obj_add_event_cb(ui->scrStatistic_btnLifeSpanClear, scrStatistic_btnLifeSpanClear_event_handler, LV_EVENT_ALL, ui);\r\nlv_obj_add_event_cb(ui->scrStatistic_ddlistLifeSpanSelect, scrStatistic_ddlistLifeSpanSelect_event_handler, LV_EVENT_ALL, ui);",
+				"inc_c": "#include \"custom.h\"",
 				"code_py": "",
 				"inc_py": ""
 			},
@@ -13083,7 +13083,7 @@
 			"keyboard_font_type": "fusionpixellatin",
 			"keyboard_font_size": 18
 		},
-		"default_scr": "scrLoader",
+		"default_scr": "scrStatistic",
 		"theme": "LV_THEME_MATERIAL_FLAG_LIGHT",
 		"screen": [
 			{
@@ -24723,8 +24723,8 @@
 				"version": 190,
 				"scrollbar_mode": "OFF",
 				"customer_code": {
-					"code_c": "",
-					"inc_c": "",
+					"code_c": "lv_obj_add_event_cb(ui->scrStatistic_btnLifeSpanClear, scrStatistic_btnLifeSpanClear_event_handler, LV_EVENT_ALL, ui);\r\nlv_obj_add_event_cb(ui->scrStatistic_ddlistLifeSpanSelect, scrStatistic_ddlistLifeSpanSelect_event_handler, LV_EVENT_ALL, ui);",
+					"inc_c": "#include \"custom.h\"",
 					"code_py": "",
 					"inc_py": ""
 				},

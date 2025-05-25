@@ -13,7 +13,7 @@
 #include "events_init.h"
 #include "widgets_init.h"
 #include "custom.h"
-
+#include "custom.h"
 
 
 void setup_scr_scrStatistic(lv_ui *ui)
@@ -490,7 +490,8 @@ void setup_scr_scrStatistic(lv_ui *ui)
     lv_obj_set_style_text_align(ui->scrStatistic_btnBack, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
 
     //The custom code of scrStatistic.
-
+    lv_obj_add_event_cb(ui->scrStatistic_btnLifeSpanClear, scrStatistic_btnLifeSpanClear_event_handler, LV_EVENT_ALL, ui);
+    lv_obj_add_event_cb(ui->scrStatistic_ddlistLifeSpanSelect, scrStatistic_ddlistLifeSpanSelect_event_handler, LV_EVENT_ALL, ui);
 
     //Update current screen layout.
     lv_obj_update_layout(ui->scrStatistic);
