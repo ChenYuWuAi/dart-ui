@@ -754,16 +754,16 @@ static void scrStatistic_event_handler (lv_event_t *e)
         ui_animation(guider_ui.scrStatistic_contDartLaunches, 300, 0, lv_obj_get_y(guider_ui.scrStatistic_contDartLaunches), 50, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrStatistic_contLifeSpan, 300, 0, lv_obj_get_y(guider_ui.scrStatistic_contLifeSpan), 50, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrStatistic_contBG, 300, 0, lv_obj_get_height(guider_ui.scrStatistic_contBG), 88, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrStatistic_labelTitle, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_labelTitle), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_labelTitle, 300, 0, lv_obj_get_y(guider_ui.scrStatistic_labelTitle), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         break;
     }
     case LV_EVENT_SCREEN_LOAD_START:
     {
-        ui_animation(guider_ui.scrStatistic_contDartLaunches, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_contDartLaunches), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_contDartLaunches, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_contDartLaunches), 34, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrStatistic_contLifeSpan, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_contLifeSpan), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrStatistic_btnBack, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_btnBack), 32, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrStatistic_contBG, 400, 0, lv_obj_get_height(guider_ui.scrStatistic_contBG), 140, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrStatistic_labelTitle, 300, 0, lv_obj_get_y(guider_ui.scrStatistic_labelTitle), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_labelTitle, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_labelTitle), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         break;
     }
     default:

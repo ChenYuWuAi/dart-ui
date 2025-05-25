@@ -12969,11 +12969,11 @@
 								"bindCondi": "",
 								"actionList": {
 									"y": {
-										"value": 35,
+										"value": 0,
 										"animation": {
-											"path_type": "ease_in",
+											"path_type": "ease_out",
 											"delay": "0",
-											"duration": "400",
+											"duration": "300",
 											"repeat_count": "0"
 										}
 									}
@@ -12989,7 +12989,7 @@
 								"bindCondi": "",
 								"actionList": {
 									"y": {
-										"value": 35,
+										"value": 34,
 										"animation": {
 											"path_type": "ease_in",
 											"delay": "0",
@@ -13049,11 +13049,11 @@
 								"bindCondi": "",
 								"actionList": {
 									"y": {
-										"value": 0,
+										"value": 35,
 										"animation": {
-											"path_type": "ease_out",
+											"path_type": "ease_in",
 											"delay": "0",
-											"duration": "300",
+											"duration": "400",
 											"repeat_count": "0"
 										}
 									}
@@ -24823,11 +24823,11 @@
 									"bindCondi": "",
 									"actionList": {
 										"y": {
-											"value": 35,
+											"value": 0,
 											"animation": {
-												"path_type": "ease_in",
+												"path_type": "ease_out",
 												"delay": "0",
-												"duration": "400",
+												"duration": "300",
 												"repeat_count": "0"
 											}
 										}
@@ -24844,7 +24844,7 @@
 									"bindCondi": "",
 									"actionList": {
 										"y": {
-											"value": 35,
+											"value": 34,
 											"animation": {
 												"path_type": "ease_in",
 												"delay": "0",
@@ -24908,11 +24908,11 @@
 									"bindCondi": "",
 									"actionList": {
 										"y": {
-											"value": 0,
+											"value": 35,
 											"animation": {
-												"path_type": "ease_out",
+												"path_type": "ease_in",
 												"delay": "0",
-												"duration": "300",
+												"duration": "400",
 												"repeat_count": "0"
 											}
 										}
