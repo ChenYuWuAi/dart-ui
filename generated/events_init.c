@@ -514,7 +514,8 @@ static void scrSetup_btnGnome_event_handler (lv_event_t *e)
     switch (code) {
     case LV_EVENT_CLICKED:
     {
-        system("sudo systemctl isolate graphical.target");
+        system("sudo systemctl isolate graphical.target &");
+        system("sudo systemctl stop dart_ros2_run.service &");
         break;
     }
     default:
