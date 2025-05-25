@@ -26,6 +26,7 @@ void events_init_scrLoader(lv_ui *ui);
 void events_init_scrFinished(lv_ui *ui);
 void events_init_scrParams(lv_ui *ui);
 void events_init_scrQRCode(lv_ui *ui);
+void events_init_scrStatistic(lv_ui *ui);
 
 #ifdef __cplusplus
 }

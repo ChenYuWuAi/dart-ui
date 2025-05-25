@@ -80,6 +80,7 @@ void init_scr_del_flag(lv_ui *ui)
     ui->scrFinished_del = true;
     ui->scrParams_del = true;
     ui->scrQRCode_del = true;
+    ui->scrStatistic_del = true;
 }
 
 void setup_bottom_layer(void)

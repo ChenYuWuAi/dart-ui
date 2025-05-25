@@ -90,12 +90,21 @@ typedef struct
 	lv_obj_t *scrSetup;
 	bool scrSetup_del;
 	lv_obj_t *scrSetup_contBG;
+	lv_obj_t *scrSetup_labelPrompt;
 	lv_obj_t *scrSetup_btnBack;
 	lv_obj_t *scrSetup_btnBack_label;
-	lv_obj_t *scrSetup_labelPrompt;
-	lv_obj_t *scrSetup_imgPrinter;
-	lv_obj_t *scrSetup_imgWave;
-	lv_obj_t *scrSetup_imgCloud;
+	lv_obj_t *scrSetup_contPanel;
+	lv_obj_t *scrSetup_btnPowerOff;
+	lv_obj_t *scrSetup_btnPowerOff_label;
+	lv_obj_t *scrSetup_btnRestartService;
+	lv_obj_t *scrSetup_btnRestartService_label;
+	lv_obj_t *scrSetup_btnGnome;
+	lv_obj_t *scrSetup_btnGnome_label;
+	lv_obj_t *scrSetup_btnSSIDConnect;
+	lv_obj_t *scrSetup_btnSSIDConnect_label;
+	lv_obj_t *scrSetup_labelSystemStatus;
+	lv_obj_t *scrSetup_taSSID;
+	lv_obj_t *scrSetup_labelSSIDPrompt;
 	lv_obj_t *scrLoader;
 	bool scrLoader_del;
 	lv_obj_t *scrLoader_contBG;
@@ -113,8 +122,6 @@ typedef struct
 	lv_obj_t *scrParams;
 	bool scrParams_del;
 	lv_obj_t *scrParams_contBG;
-	lv_obj_t *scrParams_imgbtnEdit;
-	lv_obj_t *scrParams_imgbtnEdit_label;
 	lv_obj_t *scrParams_imgbtnExport;
 	lv_obj_t *scrParams_imgbtnExport_label;
 	lv_obj_t *scrParams_labelTitle;
@@ -141,6 +148,22 @@ typedef struct
 	lv_obj_t *scrQRCode_qrcodeExport;
 	lv_obj_t *scrQRCode_labelHintExport;
 	lv_obj_t *scrQRCode_imgIKUYO;
+	lv_obj_t *scrStatistic;
+	bool scrStatistic_del;
+	lv_obj_t *scrStatistic_contBG;
+	lv_obj_t *scrStatistic_contScroll;
+	lv_obj_t *scrStatistic_contLifeSpan;
+	lv_obj_t *scrStatistic_tableLifeSpan;
+	lv_obj_t *scrStatistic_labelLifeSpan;
+	lv_obj_t *scrStatistic_btnLifeSpanClear;
+	lv_obj_t *scrStatistic_btnLifeSpanClear_label;
+	lv_obj_t *scrStatistic_ddlistLifeSpanSelect;
+	lv_obj_t *scrStatistic_contDartLaunches;
+	lv_obj_t *scrStatistic_labelDartLaunches;
+	lv_obj_t *scrStatistic_tableDartLaunches;
+	lv_obj_t *scrStatistic_labelTitle;
+	lv_obj_t *scrStatistic_btnBack;
+	lv_obj_t *scrStatistic_btnBack_label;
 	lv_obj_t *g_kb_top_layer;
 }lv_ui;
 
@@ -177,6 +200,7 @@ void setup_scr_scrLoader(lv_ui *ui);
 void setup_scr_scrFinished(lv_ui *ui);
 void setup_scr_scrParams(lv_ui *ui);
 void setup_scr_scrQRCode(lv_ui *ui);
+void setup_scr_scrStatistic(lv_ui *ui);
 LV_IMAGE_DECLARE(_single_r_RGB565A8_42x34);
 LV_IMAGE_DECLARE(_wifi_off_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_40x40);
 LV_IMAGE_DECLARE(_wifi_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_40x40);
@@ -197,12 +221,7 @@ LV_IMAGE_DECLARE(_bright_RGB565A8_33x33);
 LV_IMAGE_DECLARE(_hue_RGB565A8_30x30);
 LV_IMAGE_DECLARE(_restart_alt_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24_RGB565A8_50x50);
 LV_IMAGE_DECLARE(_restart_alt_24dp_BB271A_FILL0_wght400_GRAD0_opsz24_RGB565A8_50x50);
-LV_IMAGE_DECLARE(_printer2_RGB565A8_116x120);
-LV_IMAGE_DECLARE(_no_internet_RGB565A8_41x40);
-LV_IMAGE_DECLARE(_cloud_RGB565A8_100x70);
 LV_IMAGE_DECLARE(_ready_RGB565A8_166x166);
-LV_IMAGE_DECLARE(_edit_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_40x40);
-LV_IMAGE_DECLARE(_edit_24dp_904E29_FILL0_wght400_GRAD0_opsz24_RGB565A8_40x40);
 LV_IMAGE_DECLARE(_upload_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24_RGB565A8_40x40);
 LV_IMAGE_DECLARE(_upload_24dp_904E29_FILL0_wght400_GRAD0_opsz24_RGB565A8_40x40);
 LV_IMAGE_DECLARE(_Camera_XHS_17465037706701040g2sg31fcdj4a2medg5oo7_RGB565A8_239x235);
@@ -215,11 +234,15 @@ LV_FONT_DECLARE(lv_font_fusionpixelzhhans_20)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_12)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_23)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_23)
-LV_FONT_DECLARE(lv_font_fusionpixellatin_18)
 LV_FONT_DECLARE(lv_font_fusionpixellatin_20)
-LV_FONT_DECLARE(lv_font_fusionpixellatin_33)
-LV_FONT_DECLARE(lv_font_fusionpixelzhhans_16)
+LV_FONT_DECLARE(lv_font_fusionpixellatin_24)
 LV_FONT_DECLARE(lv_font_fusionpixelzhhans_24)
+LV_FONT_DECLARE(lv_font_montserratMedium_16)
+LV_FONT_DECLARE(lv_font_montserratMedium_12)
+LV_FONT_DECLARE(lv_font_fusionpixelzhhans_25)
+LV_FONT_DECLARE(lv_font_fusionpixelzhhans_16)
+LV_FONT_DECLARE(lv_font_fusionpixellatin_33)
+LV_FONT_DECLARE(lv_font_fusionpixellatin_18)
 
 
 #ifdef __cplusplus

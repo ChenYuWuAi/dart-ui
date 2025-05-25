@@ -462,7 +462,7 @@ void setup_scr_scrParamsEdit(lv_ui *ui)
     lv_style_set_pad_bottom(&style_scrParamsEdit_listFiles_extra_btns_main_default, 5);
     lv_style_set_border_width(&style_scrParamsEdit_listFiles_extra_btns_main_default, 0);
     lv_style_set_text_color(&style_scrParamsEdit_listFiles_extra_btns_main_default, lv_color_hex(0x0D3055));
-    lv_style_set_text_font(&style_scrParamsEdit_listFiles_extra_btns_main_default, &lv_font_fusionpixellatin_18);
+    lv_style_set_text_font(&style_scrParamsEdit_listFiles_extra_btns_main_default, &lv_font_fusionpixellatin_20);
     lv_style_set_text_opa(&style_scrParamsEdit_listFiles_extra_btns_main_default, 255);
     lv_style_set_radius(&style_scrParamsEdit_listFiles_extra_btns_main_default, 5);
     lv_style_set_bg_opa(&style_scrParamsEdit_listFiles_extra_btns_main_default, 255);
@@ -482,10 +482,10 @@ void setup_scr_scrParamsEdit(lv_ui *ui)
     lv_style_set_border_width(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, 0);
     lv_style_set_radius(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, 5);
     lv_style_set_text_color(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, lv_color_hex(0x0D3055));
-    lv_style_set_text_font(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, &lv_font_fusionpixellatin_18);
+    lv_style_set_text_font(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, &lv_font_fusionpixellatin_20);
     lv_style_set_text_opa(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, 255);
     lv_style_set_bg_opa(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, 255);
-    lv_style_set_bg_color(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, lv_color_hex(0xffffff));
+    lv_style_set_bg_color(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, lv_color_hex(0xEDEDED));
     lv_style_set_bg_grad_dir(&style_scrParamsEdit_listFiles_extra_btns_main_pressed, LV_GRAD_DIR_NONE);
     lv_obj_add_style(ui->scrParamsEdit_listFiles_item1, &style_scrParamsEdit_listFiles_extra_btns_main_pressed, LV_PART_MAIN|LV_STATE_PRESSED);
     lv_obj_add_style(ui->scrParamsEdit_listFiles_item0, &style_scrParamsEdit_listFiles_extra_btns_main_pressed, LV_PART_MAIN|LV_STATE_PRESSED);
@@ -501,10 +501,10 @@ void setup_scr_scrParamsEdit(lv_ui *ui)
     lv_style_set_border_width(&style_scrParamsEdit_listFiles_extra_btns_main_focused, 0);
     lv_style_set_radius(&style_scrParamsEdit_listFiles_extra_btns_main_focused, 5);
     lv_style_set_text_color(&style_scrParamsEdit_listFiles_extra_btns_main_focused, lv_color_hex(0x0D3055));
-    lv_style_set_text_font(&style_scrParamsEdit_listFiles_extra_btns_main_focused, &lv_font_fusionpixellatin_18);
+    lv_style_set_text_font(&style_scrParamsEdit_listFiles_extra_btns_main_focused, &lv_font_fusionpixellatin_20);
     lv_style_set_text_opa(&style_scrParamsEdit_listFiles_extra_btns_main_focused, 255);
     lv_style_set_bg_opa(&style_scrParamsEdit_listFiles_extra_btns_main_focused, 255);
-    lv_style_set_bg_color(&style_scrParamsEdit_listFiles_extra_btns_main_focused, lv_color_hex(0xffffff));
+    lv_style_set_bg_color(&style_scrParamsEdit_listFiles_extra_btns_main_focused, lv_color_hex(0xededed));
     lv_style_set_bg_grad_dir(&style_scrParamsEdit_listFiles_extra_btns_main_focused, LV_GRAD_DIR_NONE);
     lv_obj_add_style(ui->scrParamsEdit_listFiles_item1, &style_scrParamsEdit_listFiles_extra_btns_main_focused, LV_PART_MAIN|LV_STATE_FOCUSED);
     lv_obj_add_style(ui->scrParamsEdit_listFiles_item0, &style_scrParamsEdit_listFiles_extra_btns_main_focused, LV_PART_MAIN|LV_STATE_FOCUSED);
@@ -519,7 +519,7 @@ void setup_scr_scrParamsEdit(lv_ui *ui)
     lv_style_set_pad_bottom(&style_scrParamsEdit_listFiles_extra_texts_main_default, 5);
     lv_style_set_border_width(&style_scrParamsEdit_listFiles_extra_texts_main_default, 0);
     lv_style_set_text_color(&style_scrParamsEdit_listFiles_extra_texts_main_default, lv_color_hex(0x0D3055));
-    lv_style_set_text_font(&style_scrParamsEdit_listFiles_extra_texts_main_default, &lv_font_fusionpixellatin_20);
+    lv_style_set_text_font(&style_scrParamsEdit_listFiles_extra_texts_main_default, &lv_font_fusionpixellatin_24);
     lv_style_set_text_opa(&style_scrParamsEdit_listFiles_extra_texts_main_default, 255);
     lv_style_set_radius(&style_scrParamsEdit_listFiles_extra_texts_main_default, 5);
     lv_style_set_transform_width(&style_scrParamsEdit_listFiles_extra_texts_main_default, 0);

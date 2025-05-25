@@ -46,48 +46,6 @@ void setup_scr_scrParams(lv_ui *ui)
     lv_obj_set_style_pad_right(ui->scrParams_contBG, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_shadow_width(ui->scrParams_contBG, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
-    //Write codes scrParams_imgbtnEdit
-    ui->scrParams_imgbtnEdit = lv_imagebutton_create(ui->scrParams);
-    lv_obj_set_pos(ui->scrParams_imgbtnEdit, 551, 23);
-    lv_obj_set_size(ui->scrParams_imgbtnEdit, 40, 40);
-    lv_obj_add_flag(ui->scrParams_imgbtnEdit, LV_OBJ_FLAG_CHECKABLE);
-    lv_imagebutton_set_src(ui->scrParams_imgbtnEdit, LV_IMAGEBUTTON_STATE_RELEASED, &_edit_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_40x40, NULL, NULL);
-    lv_imagebutton_set_src(ui->scrParams_imgbtnEdit, LV_IMAGEBUTTON_STATE_PRESSED, &_edit_24dp_904E29_FILL0_wght400_GRAD0_opsz24_RGB565A8_40x40, NULL, NULL);
-    lv_imagebutton_set_src(ui->scrParams_imgbtnEdit, LV_IMAGEBUTTON_STATE_CHECKED_RELEASED, &_edit_96dp_FFFFFF_FILL0_wght400_GRAD0_opsz48_RGB565A8_40x40, NULL, NULL);
-    lv_imagebutton_set_src(ui->scrParams_imgbtnEdit, LV_IMAGEBUTTON_STATE_CHECKED_PRESSED, &_edit_24dp_904E29_FILL0_wght400_GRAD0_opsz24_RGB565A8_40x40, NULL, NULL);
-    ui->scrParams_imgbtnEdit_label = lv_label_create(ui->scrParams_imgbtnEdit);
-    lv_label_set_text(ui->scrParams_imgbtnEdit_label, "");
-    lv_label_set_long_mode(ui->scrParams_imgbtnEdit_label, LV_LABEL_LONG_WRAP);
-    lv_obj_align(ui->scrParams_imgbtnEdit_label, LV_ALIGN_CENTER, 0, 0);
-    lv_obj_set_style_pad_all(ui->scrParams_imgbtnEdit, 0, LV_STATE_DEFAULT);
-
-    //Write style for scrParams_imgbtnEdit, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
-    lv_obj_set_style_text_color(ui->scrParams_imgbtnEdit, lv_color_hex(0x000000), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui->scrParams_imgbtnEdit, &lv_font_fusionpixelzhhans_12, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui->scrParams_imgbtnEdit, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_text_align(ui->scrParams_imgbtnEdit, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_width(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
-
-    //Write style for scrParams_imgbtnEdit, Part: LV_PART_MAIN, State: LV_STATE_PRESSED.
-    lv_obj_set_style_image_recolor_opa(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_STATE_PRESSED);
-    lv_obj_set_style_image_opa(ui->scrParams_imgbtnEdit, 255, LV_PART_MAIN|LV_STATE_PRESSED);
-    lv_obj_set_style_text_color(ui->scrParams_imgbtnEdit, lv_color_hex(0xFF33FF), LV_PART_MAIN|LV_STATE_PRESSED);
-    lv_obj_set_style_text_font(ui->scrParams_imgbtnEdit, &lv_font_fusionpixelzhhans_12, LV_PART_MAIN|LV_STATE_PRESSED);
-    lv_obj_set_style_text_opa(ui->scrParams_imgbtnEdit, 255, LV_PART_MAIN|LV_STATE_PRESSED);
-    lv_obj_set_style_shadow_width(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_STATE_PRESSED);
-
-    //Write style for scrParams_imgbtnEdit, Part: LV_PART_MAIN, State: LV_STATE_CHECKED.
-    lv_obj_set_style_image_recolor_opa(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_STATE_CHECKED);
-    lv_obj_set_style_image_opa(ui->scrParams_imgbtnEdit, 255, LV_PART_MAIN|LV_STATE_CHECKED);
-    lv_obj_set_style_text_color(ui->scrParams_imgbtnEdit, lv_color_hex(0xFF33FF), LV_PART_MAIN|LV_STATE_CHECKED);
-    lv_obj_set_style_text_font(ui->scrParams_imgbtnEdit, &lv_font_fusionpixelzhhans_12, LV_PART_MAIN|LV_STATE_CHECKED);
-    lv_obj_set_style_text_opa(ui->scrParams_imgbtnEdit, 255, LV_PART_MAIN|LV_STATE_CHECKED);
-    lv_obj_set_style_shadow_width(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_STATE_CHECKED);
-
-    //Write style for scrParams_imgbtnEdit, Part: LV_PART_MAIN, State: LV_IMAGEBUTTON_STATE_RELEASED.
-    lv_obj_set_style_image_recolor_opa(ui->scrParams_imgbtnEdit, 0, LV_PART_MAIN|LV_IMAGEBUTTON_STATE_RELEASED);
-    lv_obj_set_style_image_opa(ui->scrParams_imgbtnEdit, 255, LV_PART_MAIN|LV_IMAGEBUTTON_STATE_RELEASED);
-
     //Write codes scrParams_imgbtnExport
     ui->scrParams_imgbtnExport = lv_imagebutton_create(ui->scrParams);
     lv_obj_set_pos(ui->scrParams_imgbtnExport, 681, 23);

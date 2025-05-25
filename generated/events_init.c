@@ -212,6 +212,7 @@ static void scrHome_contPrint_event_handler (lv_event_t *e)
         isParams = false;
         isVision = false;
         isStatistic = true;
+        ui_load_scr_animation(&guider_ui, &guider_ui.scrStatistic, guider_ui.scrStatistic_del, &guider_ui.scrHome_del, setup_scr_scrStatistic, LV_SCR_LOAD_ANIM_FADE_ON, 300, 100, false, true);
         break;
     }
     default:
@@ -446,22 +447,17 @@ static void scrSetup_event_handler (lv_event_t *e)
     switch (code) {
     case LV_EVENT_SCREEN_LOAD_START:
     {
-        ui_animation(guider_ui.scrSetup_imgCloud, 300, 0, lv_obj_get_y(guider_ui.scrSetup_imgCloud), 70, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_imgWave, 300, 0, lv_obj_get_y(guider_ui.scrSetup_imgWave), 120, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_imgPrinter, 300, 0, lv_obj_get_y(guider_ui.scrSetup_imgPrinter), 125, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_labelPrompt, 300, 0, lv_obj_get_y(guider_ui.scrSetup_labelPrompt), 300, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_btnBack, 300, 0, lv_obj_get_y(guider_ui.scrSetup_btnBack), 370, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrSetup_labelPrompt, 300, 0, lv_obj_get_y(guider_ui.scrSetup_labelPrompt), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrSetup_contBG, 400, 0, lv_obj_get_height(guider_ui.scrSetup_contBG), 140, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrSetup_btnBack, 400, 0, lv_obj_get_y(guider_ui.scrSetup_btnBack), 31, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         break;
     }
     case LV_EVENT_SCREEN_UNLOAD_START:
     {
-        ui_animation(guider_ui.scrSetup_imgCloud, 300, 0, lv_obj_get_y(guider_ui.scrSetup_imgCloud), 90, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_imgWave, 300, 0, lv_obj_get_y(guider_ui.scrSetup_imgWave), 140, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_imgPrinter, 300, 0, lv_obj_get_y(guider_ui.scrSetup_imgPrinter), 145, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_labelPrompt, 400, 0, lv_obj_get_y(guider_ui.scrSetup_labelPrompt), 320, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_btnBack, 300, 0, lv_obj_get_y(guider_ui.scrSetup_btnBack), 390, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrSetup_labelPrompt, 400, 0, lv_obj_get_y(guider_ui.scrSetup_labelPrompt), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrSetup_contBG, 300, 0, lv_obj_get_height(guider_ui.scrSetup_contBG), 88, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
         lv_obj_set_style_bg_color(guider_ui.scrSetup_contBG, lv_color_hex(0x2f3243), LV_PART_MAIN);
+        ui_animation(guider_ui.scrSetup_btnBack, 300, 0, lv_obj_get_y(guider_ui.scrSetup_btnBack), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         break;
     }
     default:
@@ -475,7 +471,8 @@ static void scrSetup_btnBack_event_handler (lv_event_t *e)
     switch (code) {
     case LV_EVENT_RELEASED:
     {
-        ui_load_scr_animation(&guider_ui, &guider_ui.scrHome, guider_ui.scrHome_del, &guider_ui.scrSetup_del, setup_scr_scrHome, LV_SCR_LOAD_ANIM_FADE_ON, 300, 100, false, true);
+        ui_load_scr_animation(&guider_ui, &guider_ui.scrHome, guider_ui.scrHome_del, &guider_ui.scrSetup_del, setup_scr_scrHome, LV_SCR_LOAD_ANIM_NONE, 200, 200, false, true);
+        isBackHome = true;
         break;
     }
     default:
@@ -573,7 +570,6 @@ static void scrParams_event_handler (lv_event_t *e)
         ui_animation(guider_ui.scrParams_contBG, 400, 0, lv_obj_get_height(guider_ui.scrParams_contBG), 140, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_btnBack, 400, 0, lv_obj_get_y(guider_ui.scrParams_btnBack), 32, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_labelTitle, 400, 0, lv_obj_get_y(guider_ui.scrParams_labelTitle), 35, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrParams_imgbtnEdit, 400, 0, lv_obj_get_y(guider_ui.scrParams_imgbtnEdit), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_imgbtnExport, 400, 0, lv_obj_get_y(guider_ui.scrParams_imgbtnExport), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_tabviewParamsSelect, 400, 0, lv_obj_get_y(guider_ui.scrParams_tabviewParamsSelect), 25, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_contDartStatus, 400, 0, lv_obj_get_y(guider_ui.scrParams_contDartStatus), 113, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
@@ -592,7 +588,6 @@ static void scrParams_event_handler (lv_event_t *e)
     {
         ui_animation(guider_ui.scrParams_btnBack, 300, 0, lv_obj_get_y(guider_ui.scrParams_btnBack), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_labelTitle, 300, 0, lv_obj_get_y(guider_ui.scrParams_labelTitle), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrParams_imgbtnEdit, 300, 0, lv_obj_get_y(guider_ui.scrParams_imgbtnEdit), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_imgbtnExport, 300, 0, lv_obj_get_y(guider_ui.scrParams_imgbtnExport), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_tabviewParamsSelect, 300, 0, lv_obj_get_y(guider_ui.scrParams_tabviewParamsSelect), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         ui_animation(guider_ui.scrParams_contDartStatus, 300, 0, lv_obj_get_y(guider_ui.scrParams_contDartStatus), 156, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
@@ -606,20 +601,6 @@ static void scrParams_event_handler (lv_event_t *e)
         } else {
             ui_animation(guider_ui.scrParams_contBG, 300, 0, lv_obj_get_height(guider_ui.scrParams_contBG), 480, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
         }
-        break;
-    }
-    default:
-        break;
-    }
-}
-
-static void scrParams_imgbtnEdit_event_handler (lv_event_t *e)
-{
-    lv_event_code_t code = lv_event_get_code(e);
-    switch (code) {
-    case LV_EVENT_RELEASED:
-    {
-        ui_load_scr_animation(&guider_ui, &guider_ui.scrParamsEdit, guider_ui.scrParamsEdit_del, &guider_ui.scrParams_del, setup_scr_scrParamsEdit, LV_SCR_LOAD_ANIM_NONE, 200, 200, false, true);
         break;
     }
     default:
@@ -681,7 +662,6 @@ static void scrParams_tabviewParamsSelect_event_handler (lv_event_t *e)
 void events_init_scrParams (lv_ui *ui)
 {
     lv_obj_add_event_cb(ui->scrParams, scrParams_event_handler, LV_EVENT_ALL, ui);
-    lv_obj_add_event_cb(ui->scrParams_imgbtnEdit, scrParams_imgbtnEdit_event_handler, LV_EVENT_ALL, ui);
     lv_obj_add_event_cb(ui->scrParams_imgbtnExport, scrParams_imgbtnExport_event_handler, LV_EVENT_ALL, ui);
     lv_obj_add_event_cb(ui->scrParams_btnBack, scrParams_btnBack_event_handler, LV_EVENT_ALL, ui);
     lv_obj_add_event_cb(ui->scrParams_tabviewParamsSelect, scrParams_tabviewParamsSelect_event_handler, LV_EVENT_ALL, ui);
@@ -744,6 +724,51 @@ void events_init_scrQRCode (lv_ui *ui)
 {
     lv_obj_add_event_cb(ui->scrQRCode, scrQRCode_event_handler, LV_EVENT_ALL, ui);
     lv_obj_add_event_cb(ui->scrQRCode_btnBack, scrQRCode_btnBack_event_handler, LV_EVENT_ALL, ui);
+}
+
+static void scrStatistic_event_handler (lv_event_t *e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    switch (code) {
+    case LV_EVENT_SCREEN_UNLOAD_START:
+    {
+        ui_animation(guider_ui.scrStatistic_btnBack, 300, 0, lv_obj_get_y(guider_ui.scrStatistic_btnBack), 0, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_contDartLaunches, 300, 0, lv_obj_get_y(guider_ui.scrStatistic_contDartLaunches), 50, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_contLifeSpan, 300, 0, lv_obj_get_y(guider_ui.scrStatistic_contLifeSpan), 50, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_contBG, 300, 0, lv_obj_get_height(guider_ui.scrStatistic_contBG), 88, &lv_anim_path_ease_out, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
+        break;
+    }
+    case LV_EVENT_SCREEN_LOAD_START:
+    {
+        ui_animation(guider_ui.scrStatistic_contDartLaunches, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_contDartLaunches), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_contLifeSpan, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_contLifeSpan), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_btnBack, 400, 0, lv_obj_get_y(guider_ui.scrStatistic_btnBack), 32, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrStatistic_contBG, 400, 0, lv_obj_get_height(guider_ui.scrStatistic_contBG), 140, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
+        break;
+    }
+    default:
+        break;
+    }
+}
+
+static void scrStatistic_btnBack_event_handler (lv_event_t *e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    switch (code) {
+    case LV_EVENT_CLICKED:
+    {
+        ui_load_scr_animation(&guider_ui, &guider_ui.scrHome, guider_ui.scrHome_del, &guider_ui.scrStatistic_del, setup_scr_scrHome, LV_SCR_LOAD_ANIM_NONE, 200, 200, false, true);
+        break;
+    }
+    default:
+        break;
+    }
+}
+
+void events_init_scrStatistic (lv_ui *ui)
+{
+    lv_obj_add_event_cb(ui->scrStatistic, scrStatistic_event_handler, LV_EVENT_ALL, ui);
+    lv_obj_add_event_cb(ui->scrStatistic_btnBack, scrStatistic_btnBack_event_handler, LV_EVENT_ALL, ui);
 }
 
 
