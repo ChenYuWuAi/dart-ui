@@ -480,10 +480,55 @@ static void scrSetup_btnBack_event_handler (lv_event_t *e)
     }
 }
 
+static void scrSetup_btnPowerOff_event_handler (lv_event_t *e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    switch (code) {
+    case LV_EVENT_CLICKED:
+    {
+        system("sudo poweroff");
+        break;
+    }
+    default:
+        break;
+    }
+}
+
+static void scrSetup_btnRestartService_event_handler (lv_event_t *e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    switch (code) {
+    case LV_EVENT_CLICKED:
+    {
+        system("sudo systemctl restart dart_ros2_run.service && sudo systemctl restart uros_agent_ros2_run.service");
+        break;
+    }
+    default:
+        break;
+    }
+}
+
+static void scrSetup_btnGnome_event_handler (lv_event_t *e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    switch (code) {
+    case LV_EVENT_CLICKED:
+    {
+        system("sudo systemctl isolate graphical.target");
+        break;
+    }
+    default:
+        break;
+    }
+}
+
 void events_init_scrSetup (lv_ui *ui)
 {
     lv_obj_add_event_cb(ui->scrSetup, scrSetup_event_handler, LV_EVENT_ALL, ui);
     lv_obj_add_event_cb(ui->scrSetup_btnBack, scrSetup_btnBack_event_handler, LV_EVENT_ALL, ui);
+    lv_obj_add_event_cb(ui->scrSetup_btnPowerOff, scrSetup_btnPowerOff_event_handler, LV_EVENT_ALL, ui);
+    lv_obj_add_event_cb(ui->scrSetup_btnRestartService, scrSetup_btnRestartService_event_handler, LV_EVENT_ALL, ui);
+    lv_obj_add_event_cb(ui->scrSetup_btnGnome, scrSetup_btnGnome_event_handler, LV_EVENT_ALL, ui);
 }
 
 static void scrLoader_event_handler (lv_event_t *e)

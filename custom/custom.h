@@ -29,6 +29,11 @@ void loader_anim_complete_cb(lv_obj_t* var);
 void scrStatistic_btnLifeSpanClear_event_handler(lv_event_t *e);
 void scrStatistic_ddlistLifeSpanSelect_event_handler(lv_event_t *e);
 
+// WIFI Connect
+void scrSetup_btnSSIDConnect_event_handler(lv_event_t *e);
+
+void connect_to_wifi(const char *ssid);
+
 #ifdef __cplusplus
 }
 #endif

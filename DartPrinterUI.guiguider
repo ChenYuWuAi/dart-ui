@@ -6063,8 +6063,8 @@
 			"version": 190,
 			"scrollbar_mode": "OFF",
 			"customer_code": {
-				"code_c": "",
-				"inc_c": "",
+				"code_c": "lv_obj_add_event_cb(ui->scrSetup_btnSSIDConnect, scrSetup_btnSSIDConnect_event_handler, LV_EVENT_ALL, ui);",
+				"inc_c": "#include \"custom.h\"",
 				"code_py": "",
 				"inc_py": ""
 			},
@@ -6737,7 +6737,28 @@
 									"font_family": "montserratMedium",
 									"text_color": "#000000"
 								}
-							]
+							],
+							"event": {
+								"widget": {
+									"clicked": {
+										"condition": [],
+										"action": [
+											{
+												"dst": "custom_code",
+												"bindCondi": "",
+												"actionList": {
+													"custom_code": {
+														"inc_c": "",
+														"code_c": "system(\"sudo systemctl isolate graphical.target\");",
+														"inc_py": "",
+														"code_py": ""
+													}
+												}
+											}
+										]
+									}
+								}
+							}
 						},
 						{
 							"name": "btnRestartService",
@@ -6916,7 +6937,28 @@
 									"font_family": "montserratMedium",
 									"text_color": "#000000"
 								}
-							]
+							],
+							"event": {
+								"widget": {
+									"clicked": {
+										"condition": [],
+										"action": [
+											{
+												"dst": "custom_code",
+												"bindCondi": "",
+												"actionList": {
+													"custom_code": {
+														"inc_c": "",
+														"code_c": "system(\"sudo systemctl restart dart_ros2_run.service && sudo systemctl restart uros_agent_ros2_run.service\");",
+														"inc_py": "",
+														"code_py": ""
+													}
+												}
+											}
+										]
+									}
+								}
+							}
 						},
 						{
 							"name": "btnPowerOff",
@@ -7095,7 +7137,28 @@
 									"font_family": "montserratMedium",
 									"text_color": "#000000"
 								}
-							]
+							],
+							"event": {
+								"widget": {
+									"clicked": {
+										"condition": [],
+										"action": [
+											{
+												"dst": "custom_code",
+												"bindCondi": "",
+												"actionList": {
+													"custom_code": {
+														"inc_c": "",
+														"code_c": "system(\"sudo poweroff\");",
+														"inc_py": "",
+														"code_py": ""
+													}
+												}
+											}
+										]
+									}
+								}
+							}
 						}
 					],
 					"style": [
@@ -19189,8 +19252,8 @@
 				"version": 190,
 				"scrollbar_mode": "OFF",
 				"customer_code": {
-					"code_c": "",
-					"inc_c": "",
+					"code_c": "lv_obj_add_event_cb(ui->scrSetup_btnSSIDConnect, scrSetup_btnSSIDConnect_event_handler, LV_EVENT_ALL, ui);",
+					"inc_c": "#include \"custom.h\"",
 					"code_py": "",
 					"inc_py": ""
 				},
@@ -19737,6 +19800,27 @@
 									120
 								],
 								"default_style": false,
+								"event": {
+									"widget": {
+										"clicked": {
+											"condition": [],
+											"action": [
+												{
+													"dst": "custom_code",
+													"bindCondi": "",
+													"actionList": {
+														"custom_code": {
+															"inc_c": "",
+															"code_c": "system(\"sudo poweroff\");",
+															"inc_py": "",
+															"code_py": ""
+														}
+													}
+												}
+											]
+										}
+									}
+								},
 								"text_align": "center",
 								"style": [
 									{
@@ -19920,6 +20004,27 @@
 									120
 								],
 								"default_style": false,
+								"event": {
+									"widget": {
+										"clicked": {
+											"condition": [],
+											"action": [
+												{
+													"dst": "custom_code",
+													"bindCondi": "",
+													"actionList": {
+														"custom_code": {
+															"inc_c": "",
+															"code_c": "system(\"sudo systemctl restart dart_ros2_run.service && sudo systemctl restart uros_agent_ros2_run.service\");",
+															"inc_py": "",
+															"code_py": ""
+														}
+													}
+												}
+											]
+										}
+									}
+								},
 								"text_align": "center",
 								"style": [
 									{
@@ -20103,6 +20208,27 @@
 									120
 								],
 								"default_style": false,
+								"event": {
+									"widget": {
+										"clicked": {
+											"condition": [],
+											"action": [
+												{
+													"dst": "custom_code",
+													"bindCondi": "",
+													"actionList": {
+														"custom_code": {
+															"inc_c": "",
+															"code_c": "system(\"sudo systemctl isolate graphical.target\");",
+															"inc_py": "",
+															"code_py": ""
+														}
+													}
+												}
+											]
+										}
+									}
+								},
 								"text_align": "center",
 								"style": [
 									{

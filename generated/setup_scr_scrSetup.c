@@ -13,7 +13,7 @@
 #include "events_init.h"
 #include "widgets_init.h"
 #include "custom.h"
-
+#include "custom.h"
 
 
 void setup_scr_scrSetup(lv_ui *ui)
@@ -324,7 +324,7 @@ void setup_scr_scrSetup(lv_ui *ui)
     lv_obj_set_style_shadow_width(ui->scrSetup_labelSSIDPrompt, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
 
     //The custom code of scrSetup.
-
+    lv_obj_add_event_cb(ui->scrSetup_btnSSIDConnect, scrSetup_btnSSIDConnect_event_handler, LV_EVENT_ALL, ui);
 
     //Update current screen layout.
     lv_obj_update_layout(ui->scrSetup);
