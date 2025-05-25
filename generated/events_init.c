@@ -720,10 +720,28 @@ static void scrQRCode_btnBack_event_handler (lv_event_t *e)
     }
 }
 
+static void scrQRCode_tabviewExportSelect_event_handler (lv_event_t *e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    switch (code) {
+    case LV_EVENT_VALUE_CHANGED:
+    {
+        if(lv_tabview_get_tab_act(guider_ui.scrQRCode_tabviewExportSelect) == 0)
+            param_edit_is_param = 0;
+        else
+            param_edit_is_param = 1;
+        break;
+    }
+    default:
+        break;
+    }
+}
+
 void events_init_scrQRCode (lv_ui *ui)
 {
     lv_obj_add_event_cb(ui->scrQRCode, scrQRCode_event_handler, LV_EVENT_ALL, ui);
     lv_obj_add_event_cb(ui->scrQRCode_btnBack, scrQRCode_btnBack_event_handler, LV_EVENT_ALL, ui);
+    lv_obj_add_event_cb(ui->scrQRCode_tabviewExportSelect, scrQRCode_tabviewExportSelect_event_handler, LV_EVENT_ALL, ui);
 }
 
 static void scrStatistic_event_handler (lv_event_t *e)

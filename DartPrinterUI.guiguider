@@ -10740,6 +10740,27 @@
 							"bg_opa": 60
 						}
 					],
+					"event": {
+						"widget": {
+							"value_changed": {
+								"condition": [],
+								"action": [
+									{
+										"dst": "custom_code",
+										"bindCondi": "",
+										"actionList": {
+											"custom_code": {
+												"inc_c": "",
+												"code_c": "if(lv_tabview_get_tab_act(guider_ui.scrQRCode_tabviewExportSelect) == 0)\r\n  param_edit_is_param = 0;\r\nelse\r\n  param_edit_is_param = 1;",
+												"inc_py": "",
+												"code_py": ""
+											}
+										}
+									}
+								]
+							}
+						}
+					},
 					"layerName": "scrQRCode"
 				},
 				{
@@ -24379,6 +24400,27 @@
 							52
 						],
 						"default_style": false,
+						"event": {
+							"widget": {
+								"value_changed": {
+									"condition": [],
+									"action": [
+										{
+											"dst": "custom_code",
+											"bindCondi": "",
+											"actionList": {
+												"custom_code": {
+													"inc_c": "",
+													"code_c": "if(lv_tabview_get_tab_act(guider_ui.scrQRCode_tabviewExportSelect) == 0)\r\n  param_edit_is_param = 0;\r\nelse\r\n  param_edit_is_param = 1;",
+													"inc_py": "",
+													"code_py": ""
+												}
+											}
+										}
+									]
+								}
+							}
+						},
 						"child": [
 							{
 								"name": "参数",
