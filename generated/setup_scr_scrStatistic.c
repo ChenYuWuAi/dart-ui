@@ -326,7 +326,7 @@ void setup_scr_scrStatistic(lv_ui *ui)
     ui->scrStatistic_labelDartLaunches = lv_label_create(ui->scrStatistic_contDartLaunches);
     lv_obj_set_pos(ui->scrStatistic_labelDartLaunches, 24, 17);
     lv_obj_set_size(ui->scrStatistic_labelDartLaunches, 195, 32);
-    lv_label_set_text(ui->scrStatistic_labelDartLaunches, "近10次打击");
+    lv_label_set_text(ui->scrStatistic_labelDartLaunches, "近20次打击");
     lv_label_set_long_mode(ui->scrStatistic_labelDartLaunches, LV_LABEL_LONG_WRAP);
 
     //Write style for scrStatistic_labelDartLaunches, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
@@ -351,9 +351,9 @@ void setup_scr_scrStatistic(lv_ui *ui)
     lv_obj_set_scrollbar_mode(ui->scrStatistic_tableDartLaunches, LV_SCROLLBAR_MODE_OFF);
     lv_table_set_column_count(ui->scrStatistic_tableDartLaunches,3);
     lv_table_set_row_count(ui->scrStatistic_tableDartLaunches,1);
-    lv_table_set_cell_value(ui->scrStatistic_tableDartLaunches,0,0,"时间");
-    lv_table_set_cell_value(ui->scrStatistic_tableDartLaunches,0,1,"速度");
-    lv_table_set_cell_value(ui->scrStatistic_tableDartLaunches,0,2,"打击编号");
+    lv_table_set_cell_value(ui->scrStatistic_tableDartLaunches,0,0,"序号");
+    lv_table_set_cell_value(ui->scrStatistic_tableDartLaunches,0,1,"时间");
+    lv_table_set_cell_value(ui->scrStatistic_tableDartLaunches,0,2,"速度");
 
     //Write style for scrStatistic_tableDartLaunches, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
     lv_obj_set_style_pad_top(ui->scrStatistic_tableDartLaunches, 0, LV_PART_MAIN|LV_STATE_DEFAULT);

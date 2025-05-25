@@ -11694,7 +11694,8 @@
 							"shadow_ofs_x": 0,
 							"shadow_ofs_y": 0
 						}
-					]
+					],
+					"layerName": "scrStatistic"
 				},
 				{
 					"name": "contScroll",
@@ -11741,7 +11742,7 @@
 									"columns": 2,
 									"row": 4,
 									"row_str": [],
-									"columns_str": "时间,速度,打击编号",
+									"columns_str": "序号,时间,速度",
 									"style": [
 										{
 											"part": "LV_PART_MAIN",
@@ -11919,7 +11920,7 @@
 									"width": 195,
 									"height": 32,
 									"default_style": false,
-									"text": "近10次打击",
+									"text": "近20次打击",
 									"long_mode": "LV_LABEL_LONG_WRAP",
 									"custom_attribute": [],
 									"attribute_type": "",
@@ -12962,6 +12963,21 @@
 										}
 									}
 								}
+							},
+							{
+								"dst": "ihnqdelx",
+								"bindCondi": "",
+								"actionList": {
+									"y": {
+										"value": 35,
+										"animation": {
+											"path_type": "ease_in",
+											"delay": "0",
+											"duration": "400",
+											"repeat_count": "0"
+										}
+									}
+								}
 							}
 						]
 					},
@@ -13023,6 +13039,21 @@
 											"path_type": "ease_in",
 											"delay": "0",
 											"duration": "400",
+											"repeat_count": "0"
+										}
+									}
+								}
+							},
+							{
+								"dst": "ihnqdelx",
+								"bindCondi": "",
+								"actionList": {
+									"y": {
+										"value": 0,
+										"animation": {
+											"path_type": "ease_out",
+											"delay": "0",
+											"duration": "300",
 											"repeat_count": "0"
 										}
 									}
@@ -24786,6 +24817,22 @@
 										}
 									},
 									"dst_type": "cont"
+								},
+								{
+									"dst": "scrStatistic_labelTitle",
+									"bindCondi": "",
+									"actionList": {
+										"y": {
+											"value": 35,
+											"animation": {
+												"path_type": "ease_in",
+												"delay": "0",
+												"duration": "400",
+												"repeat_count": "0"
+											}
+										}
+									},
+									"dst_type": "label"
 								}
 							]
 						},
@@ -24855,6 +24902,22 @@
 										}
 									},
 									"dst_type": "cont"
+								},
+								{
+									"dst": "scrStatistic_labelTitle",
+									"bindCondi": "",
+									"actionList": {
+										"y": {
+											"value": 0,
+											"animation": {
+												"path_type": "ease_out",
+												"delay": "0",
+												"duration": "300",
+												"repeat_count": "0"
+											}
+										}
+									},
+									"dst_type": "label"
 								}
 							]
 						}
@@ -25704,7 +25767,7 @@
 										"default_style": false,
 										"attribute_type": "",
 										"custom_attribute": [],
-										"text": "近10次打击",
+										"text": "近20次打击",
 										"long_mode": "LV_LABEL_LONG_WRAP",
 										"style": [
 											{
@@ -25970,9 +26033,9 @@
 										"columns": 3,
 										"row": 1,
 										"table_header": [
+											"序号",
 											"时间",
-											"速度",
-											"打击编号"
+											"速度"
 										],
 										"table_value": []
 									}
