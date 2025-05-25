@@ -13083,7 +13083,7 @@
 			"keyboard_font_type": "fusionpixellatin",
 			"keyboard_font_size": 18
 		},
-		"default_scr": "scrStatistic",
+		"default_scr": "scrLoader",
 		"theme": "LV_THEME_MATERIAL_FLAG_LIGHT",
 		"screen": [
 			{
