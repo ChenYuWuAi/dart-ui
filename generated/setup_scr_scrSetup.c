@@ -222,7 +222,7 @@ void setup_scr_scrSetup(lv_ui *ui)
 
     //Write codes scrSetup_labelSystemStatus
     ui->scrSetup_labelSystemStatus = lv_label_create(ui->scrSetup);
-    lv_obj_set_pos(ui->scrSetup_labelSystemStatus, 463, 225);
+    lv_obj_set_pos(ui->scrSetup_labelSystemStatus, 445, 240);
     lv_obj_set_size(ui->scrSetup_labelSystemStatus, 331, 145);
     lv_label_set_text(ui->scrSetup_labelSystemStatus, "====网络信息====\nIPv4:\nIPv6:\nSSID:\n====负载信息====\nTemp:\nCPU:\nMem:");
     lv_label_set_long_mode(ui->scrSetup_labelSystemStatus, LV_LABEL_LONG_WRAP);
@@ -245,7 +245,7 @@ void setup_scr_scrSetup(lv_ui *ui)
 
     //Write codes scrSetup_taSSID
     ui->scrSetup_taSSID = lv_textarea_create(ui->scrSetup);
-    lv_obj_set_pos(ui->scrSetup_taSSID, 457, 146);
+    lv_obj_set_pos(ui->scrSetup_taSSID, 439, 161);
     lv_obj_set_size(ui->scrSetup_taSSID, 237, 42);
     lv_textarea_set_text(ui->scrSetup_taSSID, "3SE-305-5G");
     lv_textarea_set_placeholder_text(ui->scrSetup_taSSID, "");
@@ -302,7 +302,7 @@ void setup_scr_scrSetup(lv_ui *ui)
 
     //Write codes scrSetup_labelSSIDPrompt
     ui->scrSetup_labelSSIDPrompt = lv_label_create(ui->scrSetup);
-    lv_obj_set_pos(ui->scrSetup_labelSSIDPrompt, 460, 119);
+    lv_obj_set_pos(ui->scrSetup_labelSSIDPrompt, 442, 134);
     lv_obj_set_size(ui->scrSetup_labelSSIDPrompt, 166, 24);
     lv_label_set_text(ui->scrSetup_labelSSIDPrompt, "SSID [nmcli con up]");
     lv_label_set_long_mode(ui->scrSetup_labelSSIDPrompt, LV_LABEL_LONG_WRAP);

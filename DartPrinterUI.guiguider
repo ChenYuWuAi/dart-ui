@@ -6077,8 +6077,8 @@
 					"name": "labelSSIDPrompt",
 					"id": "671y9axp",
 					"type": "label",
-					"left": 460,
-					"top": 119,
+					"left": 442,
+					"top": 134,
 					"visible": true,
 					"isLock": false,
 					"flag": [],
@@ -6174,8 +6174,8 @@
 					"name": "taSSID",
 					"id": "h3nx20av",
 					"type": "ta",
-					"left": 457,
-					"top": 146,
+					"left": 439,
+					"top": 161,
 					"visible": true,
 					"isLock": false,
 					"flag": [],
@@ -6274,8 +6274,8 @@
 					"name": "labelSystemStatus",
 					"id": "cwkg8qdx",
 					"type": "label",
-					"left": 463,
-					"top": 225,
+					"left": 445,
+					"top": 240,
 					"visible": true,
 					"isLock": false,
 					"flag": [],
@@ -20601,8 +20601,8 @@
 						"visible": true,
 						"flag": [],
 						"pos": [
-							463,
-							225
+							445,
+							240
 						],
 						"size": [
 							331,
@@ -20701,8 +20701,8 @@
 						"visible": true,
 						"flag": [],
 						"pos": [
-							457,
-							146
+							439,
+							161
 						],
 						"size": [
 							237,
@@ -20804,8 +20804,8 @@
 						"visible": true,
 						"flag": [],
 						"pos": [
-							460,
-							119
+							442,
+							134
 						],
 						"size": [
 							166,
