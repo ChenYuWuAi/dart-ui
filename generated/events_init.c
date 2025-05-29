@@ -448,7 +448,7 @@ static void scrSetup_event_handler (lv_event_t *e)
     case LV_EVENT_SCREEN_LOAD_START:
     {
         ui_animation(guider_ui.scrSetup_labelPrompt, 300, 0, lv_obj_get_y(guider_ui.scrSetup_labelPrompt), 35, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
-        ui_animation(guider_ui.scrSetup_contBG, 400, 0, lv_obj_get_height(guider_ui.scrSetup_contBG), 140, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
+        ui_animation(guider_ui.scrSetup_contBG, 400, 0, lv_obj_get_height(guider_ui.scrSetup_contBG), 120, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_height, NULL, NULL, NULL);
         ui_animation(guider_ui.scrSetup_btnBack, 400, 0, lv_obj_get_y(guider_ui.scrSetup_btnBack), 31, &lv_anim_path_ease_in, 0, 0, 0, 0, (lv_anim_exec_xcb_t)lv_obj_set_y, NULL, NULL, NULL);
         break;
     }
